@@ -27,7 +27,7 @@ const Header = () => {
         </div>
       ) : (
         <ul className="header-menu">
-          <li>
+          <li onClick={() => setMenuOpened(false)}>
             <Link
               to="home"
               span={true}
@@ -37,7 +37,7 @@ const Header = () => {
               Home
             </Link>
           </li>
-          <li>
+          <li onClick={() => setMenuOpened(false)}>
             {" "}
             <Link
               to="programs"
@@ -48,7 +48,7 @@ const Header = () => {
               Programs
             </Link>{" "}
           </li>
-          <li>
+          <li onClick={() => setMenuOpened(false)}>
             {" "}
             <Link
               to="reasons"
@@ -59,7 +59,7 @@ const Header = () => {
               Why us
             </Link>{" "}
           </li>
-          <li>
+          <li onClick={() => setMenuOpened(false)}>
             {" "}
             <Link
               to="plans"
@@ -70,7 +70,7 @@ const Header = () => {
               Plans
             </Link>{" "}
           </li>
-          <li>
+          <li onClick={() => setMenuOpened(false)}>
             {" "}
             <Link
               to="testimonials"
